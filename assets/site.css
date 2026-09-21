@@ -228,6 +228,8 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
 .dark-band .rowlink { border-color: rgba(255,255,255,.14); }
 .dark-band .muted { color: var(--mutedOnDark, #a8a8b0); }
 .two { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.two--hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+@media (max-width: 760px) { .two--hero { grid-template-columns: minmax(0, 1fr); } }
 .index-cols { display: grid; gap: 20px 26px; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); font-size: 14px; line-height: 1.8; }
 .index-cols b { display: block; font-size: 15px; margin-bottom: 3px; }
 .index-cols a { display: block; color: var(--ink2); }
@@ -243,16 +245,19 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
 .cookie { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--card);
   border-top: 2px solid var(--accent); padding: 14px 0; }
 .cookie__in { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.cookie__short { display: none; }
 .cookie p { flex: 1 1 340px; font-size: 14px; line-height: 1.5; color: var(--ink2); }
 .cookie .btn { flex: 0 1 auto; }
-@media (max-width: 700px) {
-  .cookie { padding-bottom: 62px; }
-  .cookie__in { gap: 9px; }
-  .cookie p { flex-basis: 100%; font-size: 13px; }
-  .cookie .btn { flex: 1 1 calc(50% - 5px); min-height: 44px; padding: 0 10px; font-size: 14px; }
-  .cookie .btn--line { flex-basis: 100%; order: 3; min-height: 38px; border: 0; background: transparent;
-    color: var(--muted); text-decoration: underline; }
-  .demo-back { bottom: 12px; right: 12px; padding: 9px 13px; font-size: 12px; }
+@media (max-width: 760px) {
+  .cookie { padding: 10px 0 12px; }
+  .cookie__in { gap: 8px; }
+  .cookie__long { display: none; }
+  .cookie__short { display: inline; }
+  .cookie p { flex-basis: 100%; font-size: 13px; line-height: 1.45; }
+  .cookie .btn { flex: 1 1 calc(50% - 4px); min-height: 42px; padding: 0 10px; font-size: 14px; }
+  .cookie .btn--line { flex-basis: 100%; order: 3; min-height: 26px; border: 0; background: transparent;
+    color: var(--muted); text-decoration: underline; font-size: 13px; }
+  .demo-back { bottom: 128px; right: 12px; padding: 8px 12px; font-size: 12px; }
 }
 
 .crumbs { font-size: 14px; color: var(--muted); padding-top: 14px; overflow-wrap: anywhere; }
@@ -262,3 +267,42 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
   color: #fff; font: 500 13px/1 system-ui, sans-serif; padding: 11px 15px; border-radius: 999px;
   box-shadow: 0 4px 14px rgba(0,0,0,.25); }
 .demo-back:hover { color: #fff; }
+
+/* ---------- плотная мобильная раскладка ---------- */
+@media (max-width: 760px) {
+  .hdr__in { padding: 7px 0; gap: 9px; }
+  .hdr__in .logo { font-size: 18px; }
+  .hdr__acts { gap: 7px; }
+  .hdr__acts .btn { min-height: 40px; padding: 0 13px; font-size: 14px; }
+  .burger { width: 40px; height: 40px; }
+  .search { padding: 3px 3px 3px 11px; }
+  .search input { height: 38px; font-size: 15px; }
+  .search .btn { min-height: 36px; }
+  .nav { padding: 7px 0; gap: 12px; font-size: 14px; }
+
+  .section { padding-top: 18px; }
+  .section__head { margin-bottom: 10px; }
+  .panel { padding: 14px; }
+  .panel + .panel { margin-top: 12px; }
+  .stack > * + * { margin-top: 14px; }
+
+  /* разделы — компактные строки вместо высоких плиток */
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 8px; }
+  .tile { flex-direction: row; align-items: center; gap: 10px; padding: 11px 12px; }
+  .tile svg { width: 19px; height: 19px; flex: none; }
+  .tile span { font-size: 14px; }
+
+  .toolbar { gap: 8px; margin-bottom: 12px; }
+  .fchip { min-height: 38px; padding: 0 12px; font-size: 13px; }
+  .index-cols { gap: 14px 18px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); line-height: 1.7; }
+  .ftr__in { gap: 18px 28px; }
+  .ftr a { line-height: 1.85; }
+  .gallery__thumbs { grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 6px; padding: 8px; }
+  .price-big { font-size: clamp(23px, 7vw, 30px); }
+  .safety__cols { gap: 14px; }
+  .form { padding: 16px; }
+  .form__grid { gap: 12px; }
+}
+@media (max-width: 400px) {
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
