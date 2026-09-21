@@ -257,7 +257,7 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
   .cookie .btn { flex: 1 1 calc(50% - 4px); min-height: 42px; padding: 0 10px; font-size: 14px; }
   .cookie .btn--line { flex-basis: 100%; order: 3; min-height: 26px; border: 0; background: transparent;
     color: var(--muted); text-decoration: underline; font-size: 13px; }
-  .demo-back { bottom: 128px; right: 12px; padding: 8px 12px; font-size: 12px; }
+  .demo-back { bottom: 162px; right: 12px; padding: 8px 12px; font-size: 12px; }
 }
 
 .crumbs { font-size: 14px; color: var(--muted); padding-top: 14px; overflow-wrap: anywhere; }
@@ -305,4 +305,52 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
 }
 @media (max-width: 400px) {
   .tiles { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+/* ---------- отделка ---------- */
+::selection { background: var(--accentSoft); color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.card, .tile, .btn, .fchip, .heart, .pager a, .rowlink, .tags a, .chip { transition:
+  background-color .16s ease-out, border-color .16s ease-out, color .16s ease-out,
+  box-shadow .16s ease-out, transform .16s ease-out; }
+
+.card { box-shadow: 0 1px 2px rgba(20, 20, 30, .04); }
+.card__shot { background: var(--soft); }
+@media (hover: hover) {
+  .card:hover { box-shadow: 0 8px 22px rgba(20, 20, 30, .10); transform: translateY(-2px); }
+  .tile:hover { background: var(--accentSoft); border-color: var(--accentSoft); }
+  .tile:hover span { color: var(--accent); }
+  .tile--dark:hover { background: var(--dark); border-color: var(--dark); }
+  .tile--dark:hover span { color: var(--paperOnDark, #fff); }
+  .btn--pri:hover, .btn--acc:hover { filter: brightness(.93); }
+  .btn--out:hover, .btn--line:hover { background: var(--soft); }
+  .fchip:hover { border-color: var(--ink); }
+  .heart:hover { background: #fff; }
+  .heart:hover svg { stroke: var(--accent); }
+  .tags a:hover, .chip:hover { background: var(--accentSoft); color: var(--accent); }
+  .pager a:hover { border-color: var(--ink); }
+  .newsitem:hover span { color: var(--accent); }
+}
+.btn:active, .fchip:active, .pager a:active { transform: translateY(1px); }
+.heart svg { transition: stroke .16s ease-out; }
+
+.badge { box-shadow: 0 1px 3px rgba(20, 20, 30, .10); }
+.pcount { backdrop-filter: blur(3px); }
+.gallery { box-shadow: 0 1px 2px rgba(20, 20, 30, .04); }
+.gallery__thumbs img { transition: outline-color .16s ease-out, opacity .16s ease-out; outline: 2px solid transparent; outline-offset: -2px; }
+@media (hover: hover) { .gallery__thumbs img:hover { outline-color: var(--line2); } }
+
+.search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accentSoft); }
+.field:focus { border-color: var(--accent); outline: 0; box-shadow: 0 0 0 3px var(--accentSoft); }
+.section__head h1, .section__head h2 { text-wrap: balance; }
+.card__title, .rowlink, .newsitem span { text-wrap: pretty; }
+.ftr a:hover { color: var(--paperOnDark, #fff); }
+.crumbs a:hover { color: var(--accent); }
+.filters, .panel, .form { box-shadow: 0 1px 2px rgba(20, 20, 30, .03); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .card:hover { transform: none; }
+  .btn:active, .fchip:active, .pager a:active { transform: none; }
 }
