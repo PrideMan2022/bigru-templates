@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>BigRu.ee — Б · Боковое меню</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap">
+<style>
+body { margin: 0; font-family: 'Onest', sans-serif; background: #fbfaf8; color: #23211e; }
+a { color: #23211e; text-decoration: none; }
+h1, h2, h3 { margin: 0; letter-spacing: -0.015em; }
+button { font-family: inherit; cursor: pointer; }
+img { display: block; }
+</style>
+<style>
+body { display: flex; justify-content: center; }
+.demo-back { position: fixed; right: 14px; bottom: 14px; z-index: 99; background: rgba(18,18,18,.88); color: #fff;
+  font: 500 13px/1 system-ui, sans-serif; padding: 10px 15px; border-radius: 999px; text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+</style>
+</head>
+<body>
+<a class="demo-back" href="../">← все варианты</a>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #fbfaf8; position: relative; overflow: hidden;">
+
+  <!-- СТРАНИЦА ПОД МЕНЮ -->
+  <div style="position: absolute; inset: 0; background: #fbfaf8;">
+    <div style="height: 56px; background: #ffffff; border-bottom: 1px solid #e6e0d8; display: flex; align-items: center; gap: 12px; padding: 0 14px;">
+      <span style="width: 38px;"></span>
+      <span style="font-size: 19px; font-weight: 700;">BigRu<span style="color: #9a3412;">.ee</span></span>
+    </div>
+    <div style="padding: 16px;">
+      <div style="height: 44px; background: #ffffff; border: 1px solid #ddd5ca; border-radius: 10px; margin-bottom: 14px;"></div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+        <div style="height: 210px; background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px;"></div>
+        <div style="height: 210px; background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЗАТЕМНЕНИЕ -->
+  <div style="position: absolute; inset: 0; background: rgba(35, 33, 30, 0.5);"></div>
+
+  <!-- БОКОВОЕ МЕНЮ -->
+  <nav style="position: absolute; left: 0; top: 0; bottom: 0; width: 318px; background: #ffffff; display: flex; flex-direction: column; box-shadow: 8px 0 28px rgba(35,33,30,.24);">
+
+    <div style="padding: 14px 16px; border-bottom: 1px solid #f0ece5; display: flex; align-items: center; flex-shrink: 0;">
+      <span style="font-size: 19px; font-weight: 700;">BigRu<span style="color: #9a3412;">.ee</span></span>
+      <span style="flex-grow: 1;"></span>
+      <button type="button" aria-label="Закрыть меню" style="width: 36px; height: 36px; border: none; background: transparent; display: flex; align-items: center; justify-content: center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#23211e" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div style="padding: 14px 16px; border-bottom: 1px solid #f0ece5; display: flex; gap: 9px; flex-shrink: 0;">
+      <a href="#new" style="flex: 1 1 0; text-align: center; background: #9a3412; color: #ffffff; border-radius: 10px; padding: 12px 8px; font-size: 14px; font-weight: 500;">Подать объявление</a>
+      <a href="#login" style="flex-shrink: 0; border: 1px solid #ddd5ca; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-weight: 500;">Войти</a>
+    </div>
+
+    <div style="flex-grow: 1; overflow: hidden; padding: 6px 8px;">
+      <div style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #6b665f; font-weight: 700; padding: 8px 8px 6px;">Разделы</div>
+
+      <a href="#s1" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="m3 11 9-7 9 7v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8Z"/></svg>
+        <span style="flex-grow: 1;">Недвижимость</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s2" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="M5 17h14M6 17l1.5-6h9L18 17"/><circle cx="7.5" cy="17.5" r="1.7"/><circle cx="16.5" cy="17.5" r="1.7"/></svg>
+        <span style="flex-grow: 1;">Транспорт</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s3" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+        <span style="flex-grow: 1;">Работа</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s4" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="m14 7 3 3-8 8-3 1 1-3 8-8Z"/><path d="M16 5.5 18.5 3 21 5.5 18.5 8"/></svg>
+        <span style="flex-grow: 1;">Услуги</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s5" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg>
+        <span style="flex-grow: 1;">Электроника</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s6" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="M4 21V10l8-6 8 6v11"/><path d="M9 21v-7h6v7"/></svg>
+        <span style="flex-grow: 1;">Дом и дача</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s7" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M7 12h3M8.5 10.5v3"/><circle cx="16" cy="11" r="1"/></svg>
+        <span style="flex-grow: 1;">Цифровые товары</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s8" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="M12 20s-6-4-6-9a3.5 3.5 0 0 1 6-2.4A3.5 3.5 0 0 1 18 11c0 5-6 9-6 9Z"/></svg>
+        <span style="flex-grow: 1;">Личные вещи</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s9" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><circle cx="8" cy="9" r="2.2"/><circle cx="16" cy="9" r="2.2"/><path d="M12 13c-2.5 0-4 2-4 4a2.5 2.5 0 0 0 2.5 2.5h3A2.5 2.5 0 0 0 16 17c0-2-1.5-4-4-4Z"/></svg>
+        <span style="flex-grow: 1;">Животные</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#s10" style="display: flex; align-items: center; gap: 12px; padding: 11px 8px; border-radius: 9px; font-size: 15px; background: #fdf1e8;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0;"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7"/></svg>
+        <span style="flex-grow: 1; color: #9a3412; font-weight: 500;">Отдам даром</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#sall" style="display: block; padding: 12px 8px 6px; font-size: 15px; font-weight: 500; color: #9a3412;">Все разделы →</a>
+    </div>
+
+    <div style="border-top: 1px solid #f0ece5; padding: 10px 16px 14px; flex-shrink: 0;">
+      <a href="#cities" style="display: block; padding: 8px 0; font-size: 14px; color: #55504a;">Города и уезды</a>
+      <a href="#rules" style="display: block; padding: 8px 0; font-size: 14px; color: #55504a;">Правила площадки</a>
+      <a href="#report" style="display: block; padding: 8px 0; font-size: 14px; color: #55504a;">Пожаловаться на объявление</a>
+      <div style="display: flex; gap: 2px; background: #f3efe9; border-radius: 9px; padding: 3px; margin-top: 10px;">
+        <a href="#ru" style="flex: 1 1 0; text-align: center; padding: 8px; border-radius: 7px; background: #ffffff; font-size: 14px; font-weight: 700;">Русский</a>
+        <a href="#et" style="flex: 1 1 0; text-align: center; padding: 8px; border-radius: 7px; font-size: 14px; font-weight: 500; color: #55504a;">Eesti</a>
+      </div>
+    </div>
+  </nav>
+
+</div>
+</body>
+</html>

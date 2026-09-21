@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>BigRu.ee — Б · Мобильная</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap">
+<style>
+body { margin: 0; font-family: 'Onest', sans-serif; background: #fbfaf8; color: #23211e; }
+a { color: #23211e; text-decoration: none; }
+h1, h2, h3 { margin: 0; letter-spacing: -0.015em; }
+button { font-family: inherit; cursor: pointer; }
+img { display: block; }
+</style>
+<style>
+body { display: flex; justify-content: center; }
+.demo-back { position: fixed; right: 14px; bottom: 14px; z-index: 99; background: rgba(18,18,18,.88); color: #fff;
+  font: 500 13px/1 system-ui, sans-serif; padding: 10px 15px; border-radius: 999px; text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+</style>
+</head>
+<body>
+<a class="demo-back" href="../">← все варианты</a>
+<div style="width: 390px; height: 2900px; box-sizing: border-box; background: #fbfaf8; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <header style="height: 56px; flex-shrink: 0; background: #ffffff; border-bottom: 1px solid #e6e0d8; display: flex; align-items: center; gap: 12px; padding: 0 14px;">
+    <button type="button" aria-label="Открыть меню разделов" style="width: 38px; height: 38px; border: none; background: transparent; display: flex; align-items: center; justify-content: center;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#23211e" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a href="#home" style="font-size: 19px; font-weight: 700;">BigRu<span style="color: #9a3412;">.ee</span></a>
+    <span style="flex-grow: 1;"></span>
+    <a href="#fav" aria-label="Избранное" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#55504a" stroke-width="1.8" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg>
+    </a>
+    <a href="#new" aria-label="Подать объявление" style="width: 38px; height: 38px; border-radius: 50%; background: #9a3412; display: flex; align-items: center; justify-content: center;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </a>
+  </header>
+
+  <!-- ПОИСК -->
+  <div style="flex-shrink: 0; background: #ffffff; border-bottom: 1px solid #e6e0d8; padding: 10px 14px 12px;">
+    <form style="display: flex; align-items: center; gap: 9px; background: #fbfaf8; border: 1px solid #ddd5ca; border-radius: 10px; padding: 0 12px; height: 44px; margin-bottom: 9px;">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6b665f" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex-shrink: 0;"><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg>
+      <label for="m-q" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">Что ищете</label>
+      <input id="m-q" type="search" placeholder="Что ищете?" style="flex-grow: 1; min-width: 0; border: none; outline: none; background: transparent; font-family: inherit; font-size: 16px; color: #23211e;">
+    </form>
+    <div style="display: flex; gap: 8px;">
+      <button type="button" style="flex: 1 1 0; height: 38px; border: 1px solid #ddd5ca; background: #ffffff; border-radius: 9px; font-size: 14px; color: #23211e; display: flex; align-items: center; justify-content: center; gap: 6px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Вся Эстония
+      </button>
+      <button type="button" style="flex: 1 1 0; height: 38px; border: 1px solid #ddd5ca; background: #ffffff; border-radius: 9px; font-size: 14px; color: #23211e; display: flex; align-items: center; justify-content: center; gap: 6px;">
+        Все категории
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6b665f" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ЛЕНТА -->
+  <section style="padding: 16px 16px 0; flex-grow: 1;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+      <h1 style="font-size: 19px; font-weight: 700;">Свежие объявления</h1>
+      <span style="flex-grow: 1;"></span>
+      <button type="button" style="height: 32px; padding: 0 11px; border: 1px solid #ddd5ca; background: #ffffff; border-radius: 8px; font-size: 13px; color: #55504a; display: flex; align-items: center; gap: 5px;">
+        Новые
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#6b665f" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+
+      <a href="#m1" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="position: relative; display: block;">
+          <img src="../img/flat.jpg" alt="Гостиная в квартире" style="width: 100%; height: 132px; object-fit: cover;">
+          <span style="position: absolute; top: 8px; left: 8px; background: #fdf1e8; color: #9a3412; font-size: 10px; font-weight: 700; padding: 3px 7px; border-radius: 5px;">Продвигаемое</span>
+          <span style="position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.93); display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg></span>
+          <span style="position: absolute; left: 8px; bottom: 8px; background: rgba(35,33,30,.78); color: #fbfaf8; font-size: 11px; padding: 2px 7px; border-radius: 5px;">9 фото</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">300 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">3-комнатная квартира в Локса</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Локса · 6 дней</span>
+        </span>
+      </a>
+
+      <a href="#m2" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="position: relative; display: block;">
+          <img src="../img/ps5.jpg" alt="Игровая приставка" style="width: 100%; height: 132px; object-fit: cover;">
+          <span style="position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.93); display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg></span>
+          <span style="position: absolute; left: 8px; bottom: 8px; background: rgba(35,33,30,.78); color: #fbfaf8; font-size: 11px; padding: 2px 7px; border-radius: 5px;">5 фото</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">650 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">PlayStation 5 Disc Edition</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Таллинн · сегодня</span>
+        </span>
+      </a>
+
+      <a href="#m3" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="position: relative; display: block;">
+          <img src="../img/airpods.jpg" alt="Беспроводные наушники в кейсе" style="width: 100%; height: 132px; object-fit: cover;">
+          <span style="position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.93); display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg></span>
+          <span style="position: absolute; left: 8px; bottom: 8px; background: rgba(35,33,30,.78); color: #fbfaf8; font-size: 11px; padding: 2px 7px; border-radius: 5px;">3 фото</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">210 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">Airpods Pro 3, новые, чек</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Таллинн · сегодня</span>
+        </span>
+      </a>
+
+      <a href="#m4" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="position: relative; display: block;">
+          <img src="../img/dresser.jpg" alt="Комод" style="width: 100%; height: 132px; object-fit: cover;">
+          <span style="position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.93); display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg></span>
+          <span style="position: absolute; left: 8px; bottom: 8px; background: rgba(35,33,30,.78); color: #fbfaf8; font-size: 11px; padding: 2px 7px; border-radius: 5px;">4 фото</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">70 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">Комод, 4 ящика, самовывоз</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Таллинн · 10 дней</span>
+        </span>
+      </a>
+
+      <a href="#m5" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="width: 100%; height: 132px; background: #f2eee8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a49c92" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m4 17 5-5 4 4 3-2 4 4"/></svg>
+          <span style="font-size: 12px; color: #6b665f;">Без фотографии</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">от 30 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">Ремонт электроплит и духовок</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Таллинн · 8 дней</span>
+        </span>
+      </a>
+
+      <a href="#m6" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 12px; overflow: hidden;">
+        <span style="position: relative; display: block;">
+          <img src="../img/games.jpg" alt="Диски с играми" style="width: 100%; height: 132px; object-fit: cover;">
+          <span style="position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.93); display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg></span>
+          <span style="position: absolute; left: 8px; bottom: 8px; background: rgba(35,33,30,.78); color: #fbfaf8; font-size: 11px; padding: 2px 7px; border-radius: 5px;">2 фото</span>
+        </span>
+        <span style="display: block; padding: 10px 11px 12px;">
+          <span style="display: block; font-size: 17px; font-weight: 700;">45 €</span>
+          <span style="display: block; font-size: 13px; line-height: 1.35; margin: 4px 0 6px;">Игры для PS5, шесть дисков</span>
+          <span style="display: block; font-size: 12px; color: #6b665f;">Таллинн · сегодня</span>
+        </span>
+      </a>
+    </div>
+
+    <button type="button" style="width: 100%; height: 46px; margin-top: 14px; background: #ffffff; border: 1px solid #23211e; border-radius: 10px; font-size: 15px; font-weight: 500;">Показать ещё 40</button>
+
+    <!-- РАБОТА -->
+    <div style="background: #23211e; border-radius: 14px; padding: 16px 16px 6px; margin-top: 18px;">
+      <div style="display: flex; align-items: baseline; margin-bottom: 8px;">
+        <h2 style="font-size: 16px; font-weight: 700; color: #fbfaf8;">Работа</h2>
+        <span style="flex-grow: 1;"></span>
+        <a href="#jobs" style="font-size: 13px; color: #f0b79a;">Все вакансии →</a>
+      </div>
+      <a href="#mj1" style="display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid #3a3733;">
+        <span style="flex-grow: 1; min-width: 0;"><span style="display: block; font-size: 14px; color: #fbfaf8;">Монтажник по вентиляции</span><span style="display: block; font-size: 12px; color: #a8a29a; margin-top: 2px;">Кехра</span></span>
+        <span style="font-size: 14px; font-weight: 700; color: #fbfaf8; white-space: nowrap;">10–12 €/ч</span>
+      </a>
+      <a href="#mj2" style="display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid #3a3733;">
+        <span style="flex-grow: 1; min-width: 0;"><span style="display: block; font-size: 14px; color: #fbfaf8;">Требуется сантехник</span><span style="display: block; font-size: 12px; color: #a8a29a; margin-top: 2px;">Таллинн</span></span>
+        <span style="font-size: 14px; font-weight: 700; color: #fbfaf8; white-space: nowrap;">11 €/ч</span>
+      </a>
+      <a href="#mj3" style="display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid #3a3733;">
+        <span style="flex-grow: 1; min-width: 0;"><span style="display: block; font-size: 14px; color: #fbfaf8;">Каменщик, Германия</span><span style="display: block; font-size: 12px; color: #a8a29a; margin-top: 2px;">Работа за рубежом</span></span>
+        <span style="font-size: 14px; font-weight: 700; color: #a8a29a; white-space: nowrap;">договорная</span>
+      </a>
+    </div>
+
+    <!-- ГОРОДА -->
+    <div style="background: #f3efe9; border-radius: 14px; padding: 16px; margin-top: 18px;">
+      <h2 style="font-size: 16px; font-weight: 700; margin-bottom: 4px;">Объявления в вашем городе</h2>
+      <p style="margin: 0 0 12px; font-size: 13px; color: #55504a;">Лента и поиск ограничатся выбранным городом.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="#mc1" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Таллинн</a>
+        <a href="#mc2" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Тарту</a>
+        <a href="#mc3" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Нарва</a>
+        <a href="#mc4" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Пярну</a>
+        <a href="#mc5" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Кохтла-Ярве</a>
+        <a href="#mc6" style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 9px; padding: 9px 13px; font-size: 14px; font-weight: 500;">Йыхви</a>
+        <a href="#mcall" style="padding: 9px 5px; font-size: 14px; font-weight: 500; color: #9a3412;">все города →</a>
+      </div>
+    </div>
+
+    <!-- ПРОДАВЦУ -->
+    <div style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 14px; padding: 16px; margin-top: 18px;">
+      <h2 style="font-size: 17px; font-weight: 700; margin-bottom: 10px;">Продавцу</h2>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <span style="width: 24px; height: 24px; border-radius: 50%; background: #fdf1e8; color: #9a3412; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</span>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">Фото, цена, город. Регистрация не нужна.</span>
+      </div>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <span style="width: 24px; height: 24px; border-radius: 50%; background: #fdf1e8; color: #9a3412; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</span>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">Модератор проверяет и публикует объявление.</span>
+      </div>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <span style="width: 24px; height: 24px; border-radius: 50%; background: #fdf1e8; color: #9a3412; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</span>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">Покупатели пишут напрямую, комиссии нет.</span>
+      </div>
+      <a href="#new" style="display: block; text-align: center; margin-top: 12px; background: #9a3412; color: #ffffff; border-radius: 10px; padding: 13px; font-size: 15px; font-weight: 500;">Подать объявление</a>
+    </div>
+
+    <!-- ПОКУПАТЕЛЮ -->
+    <div style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 14px; padding: 16px; margin-top: 12px;">
+      <h2 style="font-size: 17px; font-weight: 700; margin-bottom: 10px;">Покупателю</h2>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3Z"/></svg>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">В каждой карточке видно, частное это лицо или предприниматель.</span>
+      </div>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 2px;"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">При покупке у частного лица защита прав потребителя не действует.</span>
+      </div>
+      <div style="display: flex; gap: 11px; padding: 9px 0; border-top: 1px solid #f0ece5;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16v12H7l-3 4V4Z"/></svg>
+        <span style="font-size: 14px; line-height: 1.5; color: #55504a;">Нашли нарушение — «Пожаловаться» в объявлении, ответим с обоснованием.</span>
+      </div>
+    </div>
+
+    <!-- СТАТЬИ -->
+    <div style="background: #ffffff; border: 1px solid #e6e0d8; border-radius: 14px; padding: 16px; margin-top: 12px;">
+      <h2 style="font-size: 17px; font-weight: 700; margin-bottom: 11px;">Статьи</h2>
+      <a href="#ma1" style="display: flex; gap: 11px; padding-bottom: 11px; border-bottom: 1px solid #f0ece5;">
+        <img src="../img/tallinn.jpg" alt="Старый Таллинн" style="width: 72px; height: 54px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+        <span style="min-width: 0; font-size: 14px; line-height: 1.4;">Эстония — страна балтийских пляжей и исторических городов</span>
+      </a>
+      <a href="#ma2" style="display: block; font-size: 14px; line-height: 1.45; padding: 11px 0; border-bottom: 1px solid #f0ece5;">Как безопасно есть рыбу из Балтийского моря</a>
+      <a href="#ma3" style="display: block; font-size: 14px; line-height: 1.45; padding-top: 11px;">Как подать бесплатное объявление на русском языке в Эстонии</a>
+    </div>
+
+    <!-- ТЕГИ -->
+    <div style="margin-top: 18px;">
+      <h2 style="font-size: 15px; font-weight: 700; margin-bottom: 9px;">Часто ищут</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+        <a href="#mt1" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">работа в Эстонии</a>
+        <a href="#mt2" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">недвижимость</a>
+        <a href="#mt3" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">сантехник</a>
+        <a href="#mt4" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">маклер Таллинн</a>
+        <a href="#mt5" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">вакансии</a>
+        <a href="#mt6" style="font-size: 13px; background: #f3efe9; border-radius: 8px; padding: 6px 11px; color: #55504a;">кондиционеры</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer style="background: #23211e; padding: 20px 16px 96px; margin-top: 20px; flex-shrink: 0;">
+    <div style="font-size: 18px; font-weight: 700; color: #fbfaf8; margin-bottom: 9px;">BigRu<span style="color: #f0b79a;">.ee</span></div>
+    <p style="margin: 0 0 14px; font-size: 12px; line-height: 1.7; color: #a8a29a;">
+      [НАЗВАНИЕ ЮРЛИЦА] OÜ · registrikood [РЕГ. КОД], Äriregister<br>[АДРЕС], Tallinn · [EMAIL] · KMKR [НОМЕР НДС]
+    </p>
+    <div style="font-size: 13px; line-height: 2;">
+      <a href="#terms" style="color: #a8a29a; display: block;">Условия пользования</a>
+      <a href="#privacy" style="color: #a8a29a; display: block;">Политика конфиденциальности</a>
+      <a href="#cookieset" style="color: #a8a29a; display: block;">Настройки cookie</a>
+      <a href="#report" style="color: #a8a29a; display: block;">Пожаловаться на объявление</a>
+      <a href="#authority" style="color: #a8a29a; display: block;">Контакт для органов власти</a>
+    </div>
+    <a href="#et" style="display: inline-block; margin-top: 12px; border: 1px solid #55504a; border-radius: 9px; padding: 9px 15px; font-size: 13px; color: #fbfaf8;">Eesti keeles →</a>
+  </footer>
+
+  <!-- COOKIE: НИЖНИЙ ЛИСТ -->
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; background: #ffffff; border-top: 2px solid #23211e; border-radius: 16px 16px 0 0; padding: 16px 16px 20px;">
+    <h2 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">Cookie на BigRu</h2>
+    <p style="margin: 0 0 12px; font-size: 13px; line-height: 1.5; color: #55504a;">Аналитика и реклама не загружаются без вашего согласия.</p>
+    <div style="display: flex; gap: 8px;">
+      <button type="button" style="flex: 1 1 0; height: 44px; border: 1px solid #23211e; background: #ffffff; border-radius: 10px; font-size: 14px; font-weight: 500;">Отклонить</button>
+      <button type="button" style="flex: 1 1 0; height: 44px; border: none; background: #9a3412; color: #ffffff; border-radius: 10px; font-size: 14px; font-weight: 500;">Принять</button>
+    </div>
+    <button type="button" style="width: 100%; height: 36px; margin-top: 8px; border: none; background: transparent; font-size: 13px; color: #6b665f; text-decoration: underline;">Настроить по категориям</button>
+  </div>
+
+</div>
+</body>
+</html>
