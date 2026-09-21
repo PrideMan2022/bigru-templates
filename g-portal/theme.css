@@ -1,0 +1,7 @@
+:root {
+  --font:'Manrope'; --wmed:600; --wbold:800;
+  --paper:#f4f7fc; --card:#ffffff; --field:#ffffff; --soft:#eef2f8; --tile:#ffffff; --tileline:#dde3ee;
+  --ink:#14203a; --ink2:#47536e; --muted:#5c6580; --line:#dde3ee; --line2:#dde3ee;
+  --accent:#1e5fd0; --accentSoft:#e8effc; --dark:#14203a; --paperOnDark:#ffffff; --mutedOnDark:#a6b2c9;
+  --r:16px; --rsm:10px; --rpill:999px; --shot:4 / 3;
+}

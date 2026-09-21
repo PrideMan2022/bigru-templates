@@ -1,0 +1,7 @@
+:root {
+  --font:'Onest'; --wmed:500; --wbold:700;
+  --paper:#fbfaf8; --card:#ffffff; --field:#fbfaf8; --soft:#f3efe9; --tile:#ffffff; --tileline:#e6e0d8;
+  --ink:#23211e; --ink2:#55504a; --muted:#6b665f; --line:#e6e0d8; --line2:#ddd5ca;
+  --accent:#9a3412; --accentSoft:#fdf1e8; --dark:#23211e; --paperOnDark:#fbfaf8; --mutedOnDark:#a8a29a;
+  --r:14px; --rsm:10px; --rpill:10px; --shot:4 / 3;
+}

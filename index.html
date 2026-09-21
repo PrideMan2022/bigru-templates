@@ -4,144 +4,128 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>BigRu.ee — варианты главной страницы</title>
+<title>BigRu.ee — три примера сайта</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap">
 <style>
-  :root { --ink: #16181a; --ink2: #474b4e; --muted: #62676a; --line: #e2e0da; --paper: #f7f6f3; --accent: #15603f; }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Golos Text', system-ui, sans-serif; background: var(--paper); color: var(--ink); }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 52px 24px 70px; }
-  h1 { font-size: 36px; line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 14px; }
-  .lead { font-size: 16px; line-height: 1.65; color: var(--ink2); max-width: 660px; margin: 0 0 20px; }
-  h2.group { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
-             margin: 34px 0 14px; font-weight: 600; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
-  .card { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
-          text-decoration: none; color: inherit; transition: border-color .2s ease-out; }
-  .card:hover { border-color: var(--accent); }
-  .card.pick { border-color: var(--accent); border-width: 2px; }
-  .shot { height: 130px; display: flex; }
-  .shot i { flex: 1 1 0; display: block; }
-  .body { padding: 18px 20px 20px; }
-  .num { font-size: 12px; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
-  .card h3 { font-size: 20px; margin: 7px 0 9px; letter-spacing: -0.015em; }
-  .card p { margin: 0 0 12px; font-size: 14px; line-height: 1.6; color: var(--ink2); }
-  .meta { font-size: 13px; color: var(--muted); }
-  .open { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--accent); }
-  .note { margin-top: 38px; padding: 20px 22px; background: #fff; border: 1px solid var(--line); border-radius: 14px;
-          font-size: 14px; line-height: 1.7; color: var(--ink2); }
-  .note h3 { margin: 0 0 8px; font-size: 15px; color: var(--ink); }
-  footer { margin-top: 24px; font-size: 13px; color: var(--muted); line-height: 1.7; }
-  a.plain { color: var(--accent); }
-  @media (max-width: 600px) { h1 { font-size: 28px; } .wrap { padding: 34px 18px 54px; } }
+  :root { --ink:#16181a; --ink2:#474b4e; --muted:#62676a; --line:#e2e0da; --paper:#f7f6f3; --accent:#15603f;
+          --gutter: clamp(16px, 4vw, 40px); }
+  *,*::before,*::after { box-sizing: border-box; }
+  html,body { margin:0; overflow-x:clip; }
+  body { font-family:'Golos Text',system-ui,sans-serif; background:var(--paper); color:var(--ink); line-height:1.5; }
+  .wrap { width:min(100%,1080px); margin-inline:auto; padding:clamp(34px,5vw,56px) var(--gutter) 72px; }
+  h1 { font-size:clamp(26px,4vw,38px); line-height:1.12; letter-spacing:-.02em; margin:0 0 14px; }
+  .lead { font-size:clamp(15px,1.6vw,17px); line-height:1.65; color:var(--ink2); max-width:660px; margin:0 0 30px; }
+  h2.group { font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:36px 0 14px; font-weight:600; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:18px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex;
+          flex-direction:column; min-width:0; }
+  .shot { height:120px; display:flex; }
+  .shot i { flex:1 1 0; }
+  .body { padding:18px 20px 20px; display:flex; flex-direction:column; gap:9px; }
+  .num { font-size:12px; letter-spacing:.12em; color:var(--accent); font-weight:600; }
+  .card h3 { font-size:21px; margin:0; letter-spacing:-.015em; }
+  .card p { margin:0; font-size:14px; line-height:1.6; color:var(--ink2); }
+  .meta { font-size:13px; color:var(--muted); }
+  .links { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .links a { font-size:14px; font-weight:600; color:#fff; background:var(--accent); border-radius:9px;
+             padding:10px 14px; text-decoration:none; min-height:42px; display:inline-flex; align-items:center; }
+  .links a.sec { background:#fff; color:var(--ink); border:1px solid var(--line); font-weight:500; }
+  .links a:hover { opacity:.9; }
+  .note { margin-top:38px; padding:20px 22px; background:#fff; border:1px solid var(--line); border-radius:14px;
+          font-size:14px; line-height:1.7; color:var(--ink2); }
+  .note h3 { margin:0 0 8px; font-size:15px; color:var(--ink); }
+  .note + .note { margin-top:16px; }
+  footer { margin-top:26px; font-size:13px; color:var(--muted); line-height:1.7; }
+  a.plain { color:var(--accent); }
+  code { background:var(--paper); padding:1px 5px; border-radius:4px; font-size:13px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>BigRu.ee — варианты главной страницы</h1>
-  <p class="lead">Пять решений главной страницы доски объявлений: разная структура, разная плотность, разный шрифт и палитра. Объявления, цены, города и даты взяты с работающего сайта. Макеты свёрстаны под ширину 1440&nbsp;px.</p>
+  <h1>BigRu.ee — три примера сайта</h1>
+  <p class="lead">Три рабочих демо-сайта доски объявлений: по каждому можно кликать — главная, выдача с фильтрами,
+  страница объявления и форма подачи. Вёрстка резиновая: открывайте с телефона, планшета или тяните окно браузера
+  за угол. Объявления, цены, города и даты взяты с работающего bigru.ee.</p>
 
-  <h2 class="group">Основные направления</h2>
+  <h2 class="group">Примеры сайтов</h2>
   <div class="grid">
-    <a class="card pick" href="b-vitrina/">
-      <span class="shot"><i style="background:#fbfaf8"></i><i style="background:#9a3412"></i><i style="background:#23211e"></i><i style="background:#f3efe9"></i></span>
-      <span class="body">
-        <span class="num">ВАРИАНТ Б · ПРОРАБОТАН ПОЛНОСТЬЮ</span>
-        <h3>Витрина</h3>
-        <p>Полная главная: плитки разделов, неровная сетка объявлений, тёмная полоса вакансий, города, популярное, «Продавцу» и «Покупателю», статьи, опрос, теги, полный индекс разделов.</p>
-        <span class="meta">Onest · терракота #9a3412</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
 
-    <a class="card" href="g-portal/">
+    <div class="card">
+      <span class="shot"><i style="background:#fbfaf8"></i><i style="background:#9a3412"></i><i style="background:#23211e"></i><i style="background:#f3efe9"></i></span>
+      <div class="body">
+        <span class="num">ВАРИАНТ Б</span>
+        <h3>Витрина</h3>
+        <p>Плитки разделов, неровная сетка с крупной первой карточкой, тёмная полоса вакансий, города,
+        блоки «Продавцу» и «Покупателю». Выдача с фильтром в боковой колонке.</p>
+        <span class="meta">Onest · терракота #9a3412</span>
+        <span class="links">
+          <a href="b-vitrina/">Главная</a>
+          <a class="sec" href="b-vitrina/category.html">Выдача</a>
+          <a class="sec" href="b-vitrina/ad.html">Объявление</a>
+          <a class="sec" href="b-vitrina/new.html">Подача</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="card">
       <span class="shot"><i style="background:#f4f7fc"></i><i style="background:#1e5fd0"></i><i style="background:#14203a"></i><i style="background:#eef2f8"></i></span>
-      <span class="body">
+      <div class="body">
         <span class="num">ВАРИАНТ Г</span>
         <h3>Портал</h3>
-        <p>Структура предложенного подрядчиком шаблона, собранная как надо: правая колонка с поиском, категориями и статьями, герой из одного крупного объявления, лента под ним. Плюс полоса доверия и юридический подвал.</p>
+        <p>Структура предложенного подрядчиком шаблона, собранная заново: правая колонка с поиском, категориями
+        и статьями, герой из одного крупного объявления. Выдача — списком строками.</p>
         <span class="meta">Manrope · синий #1e5fd0</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
+        <span class="links">
+          <a href="g-portal/">Главная</a>
+          <a class="sec" href="g-portal/category.html">Выдача</a>
+          <a class="sec" href="g-portal/ad.html">Объявление</a>
+          <a class="sec" href="g-portal/new.html">Подача</a>
+        </span>
+      </div>
+    </div>
 
-    <a class="card" href="d-skandinav/">
+    <div class="card">
       <span class="shot"><i style="background:#ffffff"></i><i style="background:#0b63d6"></i><i style="background:#e8452f"></i><i style="background:#1b1b1f"></i></span>
-      <span class="body">
+      <div class="body">
         <span class="num">ВАРИАНТ Д</span>
         <h3>Скандинав</h3>
-        <p>Паттерн tori.fi, finn.no и blocket.se: одно широкое поле поиска, «Разместить» иконкой «+», чипы фильтров, «Сохранить поиск», карточки 3:4 с точками карусели, блок безопасной сделки.</p>
+        <p>Паттерн tori.fi, finn.no и blocket.se: одно поле поиска, «Разместить» иконкой «+», чипы фильтров,
+        «Сохранить поиск», карточки 3:4 с точками карусели, блок безопасной сделки.</p>
         <span class="meta">Rubik · синий #0b63d6 + красный #e8452f</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
-  </div>
-
-  <h2 class="group">Вариант Б — мобильная версия</h2>
-  <div class="grid">
-    <a class="card" href="b-mobile/">
-      <span class="shot"><i style="background:#fbfaf8"></i><i style="background:#9a3412"></i><i style="background:#23211e"></i><i style="background:#f3efe9"></i></span>
-      <span class="body">
-        <span class="num">390 PX</span>
-        <h3>Мобильная главная</h3>
-        <p>Верхняя панель 56&nbsp;px с бургером и кнопкой «+», поиск с двумя фильтрами, лента в две колонки, блоки идут в один столбец. Cookie — нижний лист во всю ширину.</p>
-        <span class="meta">Открывать с телефона или сузив окно</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
-
-    <a class="card" href="b-menu/">
-      <span class="shot"><i style="background:#ffffff"></i><i style="background:#9a3412"></i><i style="background:#fdf1e8"></i><i style="background:#23211e"></i></span>
-      <span class="body">
-        <span class="num">390 PX</span>
-        <h3>Боковое меню разделов</h3>
-        <p>Разделы на мобильной не занимают экран — они в выдвижном меню слева, которое открывается бургером. Там же вход, города, правила и переключатель языка.</p>
-        <span class="meta">Состояние «меню открыто»</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
-  </div>
-
-  <h2 class="group">Первые наброски, для сравнения</h2>
-  <div class="grid">
-    <a class="card" href="a-doska/">
-      <span class="shot"><i style="background:#f4f4f2"></i><i style="background:#1f519a"></i><i style="background:#fdf8ec"></i><i style="background:#1b1b1f"></i></span>
-      <span class="body">
-        <span class="num">ВАРИАНТ А</span>
-        <h3>Доска</h3>
-        <p>Список строками с миниатюрой, слева текстовый индекс разделов и городов — газетная рубрикация. Максимум объявлений на высоту экрана.</p>
-        <span class="meta">PT Sans · синий #1f519a</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
-
-    <a class="card" href="c-lenta/">
-      <span class="shot"><i style="background:#f7f6f3"></i><i style="background:#15603f"></i><i style="background:#16181a"></i><i style="background:#e8f1ec"></i></span>
-      <span class="body">
-        <span class="num">ВАРИАНТ В</span>
-        <h3>Лента</h3>
-        <p>Слева вертикальная панель разделов, по центру лента широкими записями, справа модули, которые уже есть на сайте: популярные, статьи, опрос, теги.</p>
-        <span class="meta">Golos Text · зелёный #15603f</span>
-        <span class="open">Открыть макет →</span>
-      </span>
-    </a>
+        <span class="links">
+          <a href="d-skandinav/">Главная</a>
+          <a class="sec" href="d-skandinav/category.html">Выдача</a>
+          <a class="sec" href="d-skandinav/ad.html">Объявление</a>
+          <a class="sec" href="d-skandinav/new.html">Подача</a>
+        </span>
+      </div>
+    </div>
   </div>
 
   <div class="note">
-    <h3>О содержимом макетов</h3>
-    Объявления, цены, города и даты взяты с работающего bigru.ee. Придуманных счётчиков и статистики нет —
-    где сумма неизвестна, стоит плейсхолдер <code>[ЦЕНА]</code>, реквизиты юрлица помечены как <code>[РЕГ. КОД]</code>
-    и подобные. Часть объявлений намеренно показана в состоянии «без фотографии» — так выглядит живая доска.<br><br>
+    <h3>Что переделано</h3>
+    Прошлые макеты были свёрстаны на фиксированную ширину 1440&nbsp;px — как картинки, а не как сайт: на узком
+    экране всё разъезжалось. Сейчас вёрстка резиновая: цвета и шрифты вынесены в переменные CSS, сетки карточек
+    собраны на <code>auto-fill</code> и сами меняют число колонок, боковые колонки уходят под контент на планшете,
+    шапка сворачивается в бургер, все кликабельные элементы не меньше 44&nbsp;px. Ширина контента ограничена
+    1400&nbsp;px, поля тянутся вместе с экраном.
+  </div>
+
+  <div class="note">
+    <h3>О содержимом</h3>
+    Придуманных счётчиков и статистики нет: где сумма неизвестна, стоит <code>[ЦЕНА]</code>, реквизиты юрлица
+    помечены как <code>[РЕГ. КОД]</code>, количество результатов в выдаче — <code>[N]</code>. Часть объявлений
+    намеренно показана без фотографии — так выглядит живая доска.<br><br>
     Фотографии взяты с Wikimedia Commons под свободными лицензиями и служат временным наполнением;
-    источники и авторы — в <a class="plain" href="https://github.com/PrideMan2022/bigru-templates/blob/main/PHOTO-CREDITS.md">PHOTO-CREDITS.md</a>.
-    Перед запуском они заменяются реальными фото объявлений.<br><br>
+    источники и авторы — в <a class="plain" href="https://github.com/PrideMan2022/bigru-templates/blob/main/PHOTO-CREDITS.md">PHOTO-CREDITS.md</a>.<br><br>
     Во всех вариантах заложены элементы, обязательные для сайта в Эстонии: cookie-баннер с равноправной кнопкой
-    «Отклонить», переключатель RU/EST, пометка «Реклама», статус продавца в карточке, ссылки «Пожаловаться на объявление»
-    и «Контакт для органов власти», реквизиты юрлица в подвале.
+    «Отклонить», переключатель RU/EST, пометка «Реклама», статус продавца в карточке и в объявлении,
+    предупреждение о сделке с частным лицом, ссылки «Пожаловаться на объявление» и «Контакт для органов власти»,
+    реквизиты юрлица в подвале.
   </div>
 
   <footer>
-    Демонстрационные макеты для bigru.ee, закрыты от индексации. На работающий сайт ничего не выкладывалось.
+    Демонстрационные сайты для bigru.ee, закрыты от индексации. На работающий сайт ничего не выкладывалось.
   </footer>
 </div>
 </body>

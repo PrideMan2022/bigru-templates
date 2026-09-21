@@ -1,0 +1,7 @@
+:root {
+  --font:'Rubik'; --wmed:500; --wbold:700;
+  --paper:#ffffff; --card:#ffffff; --field:#ffffff; --soft:#f0f0f2; --tile:#f0f0f2; --tileline:transparent;
+  --ink:#1b1b1f; --ink2:#3c3c44; --muted:#5c5c66; --line:#dedee3; --line2:#c8c8cf;
+  --accent:#0b63d6; --accentSoft:#e7f0fd; --cta:#e8452f; --dark:#1b1b1f; --paperOnDark:#ffffff; --mutedOnDark:#a0a0aa;
+  --r:16px; --rsm:12px; --rpill:999px; --shot:3 / 4;
+}

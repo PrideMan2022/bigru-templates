@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Подать объявление — BigRu.ee</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<a class="demo-back" href="../">← все варианты</a>
+<header class="hdr"><div class="container hdr__in">
+<a class="logo" href="index.html">bigru<em>.</em>ee</a>
+<form class="search" role="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg>
+<label class="sr" for="q">Поиск по BigRu</label>
+<input id="q" type="search" placeholder="Поиск по BigRu">
+<button class="btn btn--acc btn--sm" type="submit" aria-label="Найти"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg></button></form>
+<div class="hdr__acts">
+<button class="burger" type="button" aria-label="Меню разделов"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<a class="ghost hide-md" href="#alerts"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>Подписки</a>
+<a class="ghost hide-md" href="#msg"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 4h16v12H8l-4 4V4Z"/></svg>Сообщения</a>
+<div class="lang"><a href="#ru" aria-current="true">RU</a><a href="#et">ET</a></div>
+<a class="ghost hide-md" href="#login"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>Войти</a>
+<a class="btn btn--pri" href="new.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 12h14M12 5v14"/></svg>Разместить</a>
+</div></div></header><nav class="container crumbs"><a href="index.html">Главная</a> · Подать объявление</nav>
+<main class="container">
+<div class="section__head" style="padding-top:14px"><h1>Подать объявление</h1></div>
+<p class="small muted" style="margin-bottom:18px">Бесплатно и без регистрации. Модератор проверит объявление
+и опубликует его в ленте — обычно в тот же день.</p>
+<div class="layout">
+<form class="form stack" style="--sp:18px">
+<div><label class="flabel" for="n-t">Заголовок объявления</label>
+<input class="field" id="n-t" type="text" placeholder="Например: 3-комнатная квартира в Локса, с мебелью" maxlength="70">
+<p class="tiny muted" style="margin-top:6px">До 70 символов. Пишите по-человечески, без КАПСА и лишних знаков.</p></div>
+
+<div class="form__grid">
+<div><label class="flabel" for="n-c">Раздел</label>
+<select class="field" id="n-c"><option>Выберите раздел</option><option>Недвижимость</option>
+<option>Транспорт</option><option>Работа</option><option>Услуги</option><option>Электроника</option>
+<option>Дом и дача</option><option>Цифровые товары</option><option>Отдам даром</option></select></div>
+<div><label class="flabel" for="n-s">Подраздел</label>
+<select class="field" id="n-s"><option>Квартиры</option><option>Комнаты</option><option>Дома и дачи</option></select></div>
+<div><label class="flabel" for="n-city">Город или уезд</label>
+<select class="field" id="n-city"><option>Таллинн</option><option>Тарту</option><option>Нарва</option>
+<option>Пярну</option><option>Кохтла-Ярве</option><option>Йыхви</option></select></div>
+<div><label class="flabel" for="n-d">Район, улица</label>
+<input class="field" id="n-d" type="text" placeholder="необязательно"></div>
+</div>
+
+<div><span class="flabel">Фотографии</span>
+<div class="drop">Перетащите файлы сюда или <a href="#pick" style="color:var(--accent);text-decoration:underline">выберите на устройстве</a><br>
+<span class="tiny">До 12 фотографий, JPG или PNG, по 8 МБ. Первая станет главной.</span></div>
+<p class="tiny muted" style="margin-top:6px">Объявления с фотографиями смотрят заметно чаще, чем без них.</p></div>
+
+<div><label class="flabel" for="n-desc">Описание</label>
+<textarea class="field" id="n-desc" placeholder="Что продаёте, в каком состоянии, почему расстаётесь. Условия сделки и как с вами связаться."></textarea></div>
+
+<div class="form__grid">
+<div><label class="flabel" for="n-p">Цена, €</label>
+<input class="field" id="n-p" type="number" placeholder="0"></div>
+<div><label class="flabel" for="n-u">Единица</label>
+<select class="field" id="n-u"><option>за штуку</option><option>в месяц</option><option>в час</option>
+<option>за выезд</option><option>цена договорная</option></select></div>
+</div>
+<div><label class="fchk"><input type="checkbox"> Торг уместен</label>
+<label class="fchk"><input type="checkbox"> Доставка возможна</label></div>
+
+<div><span class="flabel">Кто размещает</span>
+<div class="seg" style="max-width:420px">
+<button type="button" aria-pressed="true">Частное лицо</button>
+<button type="button">Предприниматель</button></div>
+<p class="tiny muted" style="margin-top:6px">Статус показывается в объявлении. Для предпринимателя обязателен
+регистрационный код — этого требуют правила для торговых площадок в ЕС.</p></div>
+
+<div class="form__grid">
+<div><label class="flabel" for="n-name">Ваше имя</label>
+<input class="field" id="n-name" type="text" placeholder="Как к вам обращаться"></div>
+<div><label class="flabel" for="n-phone">Телефон</label>
+<input class="field" id="n-phone" type="tel" placeholder="+372"></div>
+<div><label class="flabel" for="n-mail">E-mail</label>
+<input class="field" id="n-mail" type="email" placeholder="для уведомлений о сообщениях"></div>
+</div>
+
+<div><label class="fchk"><input type="checkbox"> Я прочитал
+<a href="#rules" style="color:var(--accent);text-decoration:underline">правила размещения</a> и
+<a href="#privacy" style="color:var(--accent);text-decoration:underline">политику конфиденциальности</a></label>
+<label class="fchk"><input type="checkbox"> Хочу получать письма о похожих объявлениях</label></div>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn btn--acc" type="submit" style="flex:1 1 220px">Отправить на проверку</button>
+<button class="btn btn--line" type="button">Предпросмотр</button></div>
+</form>
+
+<aside class="stack" style="--sp:16px">
+<div class="panel"><div class="panel__h">Как это работает</div>
+<div class="form__step" style="padding:9px 0;border-top:1px solid var(--soft)"><b>1</b><span>Вы заполняете форму</span></div>
+<div class="form__step" style="padding:9px 0;border-top:1px solid var(--soft)"><b>2</b><span>Модератор проверяет объявление</span></div>
+<div class="form__step" style="padding:9px 0;border-top:1px solid var(--soft)"><b>3</b><span>Объявление выходит в ленту</span></div>
+<div class="form__step" style="padding:9px 0;border-top:1px solid var(--soft)"><b>4</b><span>Покупатели пишут вам напрямую</span></div></div>
+<div class="panel"><div class="panel__h">Что нельзя размещать</div>
+<p class="small" style="line-height:1.65;color:var(--ink2)">Табак и электронные сигареты, алкоголь, лекарства,
+наркотические вещества, оружие и боеприпасы, пиротехнику, порнографию и услуги интимного характера,
+контрафакт, охраняемые виды животных и растений.</p>
+<p style="margin-top:10px"><a class="small" href="#banned" style="color:var(--accent)">Полный список →</a></p></div>
+<div class="ad-slot"><div class="ad-slot__l">Реклама</div><div class="ad-slot__b" style="min-height:250px">блок 300×250</div></div>
+</aside>
+</div></main><footer class="ftr"><div class="container ftr__in">
+<div><span class="logo">bigru<em>.</em>ee</span>
+<p>[НАЗВАНИЕ ЮРЛИЦА] OÜ · registrikood [РЕГ. КОД], Äriregister<br>[АДРЕС], Tallinn, Eesti<br>
+[EMAIL] · [ТЕЛЕФОН] · KMKR [НОМЕР НДС]</p>
+<p style="margin-top:12px"><a href="#et" style="display:inline-block;border:1px solid rgba(255,255,255,.28);
+border-radius:var(--rsm);padding:10px 16px">Eesti keeles →</a></p></div>
+<div><b>Площадка</b><a href="#rules">Правила размещения</a><a href="#help">Помощь</a>
+<a href="#ads">Реклама на сайте</a><a href="#contacts">Контакты</a></div>
+<div><b>Право</b><a href="#terms">Условия пользования</a><a href="#privacy">Конфиденциальность</a>
+<a href="#cookie">Политика cookie</a><a href="#cookieset">Настройки cookie</a></div>
+<div><b>Безопасность</b><a href="#report">Пожаловаться на объявление</a>
+<a href="#authority">Контакт для органов власти</a><a href="#banned">Что нельзя размещать</a></div>
+</div></footer>
+<div class="cookie"><div class="container cookie__in">
+<p>Технические cookie работают всегда. Аналитические и рекламные загружаются только с вашего согласия —
+отказаться так же просто, как согласиться. <a href="#cookie" style="text-decoration:underline">Политика cookie</a></p>
+<button class="btn btn--line" type="button">Настроить</button>
+<button class="btn btn--out" type="button">Отклонить всё</button>
+<button class="btn btn--acc" type="button">Принять всё</button>
+</div></div>
+</body></html>
