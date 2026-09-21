@@ -4,84 +4,88 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>BigRu.ee — 5 концептов шаблона</title>
+<title>BigRu.ee — три варианта главной</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap">
 <style>
-  :root { --ink: #12161A; --muted: #5B646D; --line: #E2E6EA; --paper: #F7F8F9; --accent: #0072CE; }
+  :root { --ink: #16181a; --ink2: #474b4e; --muted: #62676a; --line: #e2e0da; --paper: #f7f6f3; --accent: #15603f; }
   * { box-sizing: border-box; }
   body { margin: 0; font-family: 'Golos Text', system-ui, sans-serif; background: var(--paper); color: var(--ink); }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 56px 24px 72px; }
-  h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 14px; }
-  .lead { font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 660px; margin: 0 0 40px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
-  .card { display: block; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; text-decoration: none; color: inherit; transition: border-color .2s, transform .2s; }
-  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .num { font-size: 12px; letter-spacing: .14em; color: var(--accent); font-weight: 600; }
-  .card h2 { font-size: 21px; margin: 8px 0 8px; letter-spacing: -0.015em; }
-  .card p { margin: 0 0 16px; font-size: 14px; line-height: 1.6; color: var(--muted); }
-  .sw { display: flex; gap: 6px; margin-bottom: 14px; }
-  .sw i { width: 26px; height: 26px; border-radius: 7px; display: block; border: 1px solid rgba(0,0,0,.08); }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 52px 24px 70px; }
+  h1 { font-size: 36px; line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 14px; }
+  .lead { font-size: 16px; line-height: 1.65; color: var(--ink2); max-width: 640px; margin: 0 0 36px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .card { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+          text-decoration: none; color: inherit; transition: border-color .2s ease-out; }
+  .card:hover { border-color: var(--accent); }
+  .shot { height: 148px; display: flex; }
+  .shot i { flex: 1 1 0; display: block; }
+  .body { padding: 18px 20px 20px; }
+  .num { font-size: 12px; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
+  .card h2 { font-size: 20px; margin: 7px 0 9px; letter-spacing: -0.015em; }
+  .card p { margin: 0 0 12px; font-size: 14px; line-height: 1.6; color: var(--ink2); }
   .meta { font-size: 13px; color: var(--muted); }
-  .open { display: inline-block; margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--accent); }
-  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); line-height: 1.7; }
-  @media (max-width: 600px) { h1 { font-size: 30px; } .wrap { padding: 36px 18px 56px; } }
+  .open { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--accent); }
+  .note { margin-top: 40px; padding: 20px 22px; background: #fff; border: 1px solid var(--line); border-radius: 14px;
+          font-size: 14px; line-height: 1.7; color: var(--ink2); }
+  .note h3 { margin: 0 0 8px; font-size: 15px; color: var(--ink); }
+  footer { margin-top: 26px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+  a.plain { color: var(--accent); }
+  @media (max-width: 600px) { h1 { font-size: 28px; } .wrap { padding: 34px 18px 54px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>BigRu.ee — пять направлений шаблона</h1>
-  <p class="lead">Пять разных визуальных и структурных решений главной страницы доски объявлений. Макеты свёрстаны под ширину 1440&nbsp;px, реальные данные взяты с текущего сайта. Это демонстрация направления, а не готовый шаблон DLE.</p>
+  <h1>BigRu.ee — три варианта главной</h1>
+  <p class="lead">Три разных решения главной страницы доски объявлений: разная структура, разная плотность, разный шрифт и палитра. Данные объявлений взяты с работающего сайта, фотографии — временные. Макеты свёрстаны под ширину 1440&nbsp;px.</p>
 
   <div class="grid">
-    <a class="card" href="01-katalog/">
-      <div class="num">ВАРИАНТ 01</div>
-      <h2>Плотный каталог</h2>
-      <div class="sw"><i style="background:#1D4ED8"></i><i style="background:#15803D"></i><i style="background:#EEF2F7"></i><i style="background:#0F172A"></i></div>
-      <p>Левый сайдбар категорий и фильтр, четыре карточки в ряд, максимум объявлений на первом экране. Ближе всего к логике okidoki.ee и к текущей структуре сайта.</p>
-      <div class="meta">Manrope + PT Sans</div>
-      <span class="open">Открыть макет →</span>
+    <a class="card" href="a-doska/">
+      <span class="shot"><i style="background:#f4f4f2"></i><i style="background:#1f519a"></i><i style="background:#fdf8ec"></i><i style="background:#1b1b1f"></i></span>
+      <span class="body">
+        <span class="num">ВАРИАНТ А</span>
+        <h2>Доска</h2>
+        <p>Список строками с миниатюрой, слева текстовый индекс разделов и городов — газетная рубрикация. Максимум объявлений на высоту экрана, никакого маркетингового первого экрана.</p>
+        <span class="meta">PT Sans · синий #1f519a</span>
+        <span class="open">Открыть макет →</span>
+      </span>
     </a>
 
-    <a class="card" href="02-vitrina/">
-      <div class="num">ВАРИАНТ 02</div>
-      <h2>Тёплая витрина</h2>
-      <div class="sw"><i style="background:#0E7C7B"></i><i style="background:#F2542D"></i><i style="background:#FFF8F2"></i><i style="background:#12312F"></i></div>
-      <p>Крупный герой с формой поиска, плитки разделов с иконками, большие фото и избранное. Самый дружелюбный и «товарный» вид, лучше всего переносится на мобильные.</p>
-      <div class="meta">Rubik + Nunito Sans</div>
-      <span class="open">Открыть макет →</span>
+    <a class="card" href="b-vitrina/">
+      <span class="shot"><i style="background:#fbfaf8"></i><i style="background:#9a3412"></i><i style="background:#23211e"></i><i style="background:#f3efe9"></i></span>
+      <span class="body">
+        <span class="num">ВАРИАНТ Б</span>
+        <h2>Витрина</h2>
+        <p>Намеренно неровная сетка: крупная карточка на две колонки, ряд из четырёх, тёмная полоса «Работа» вообще без фотографий, рекламное место прямо в ряду карточек.</p>
+        <span class="meta">Onest · терракота #9a3412</span>
+        <span class="open">Открыть макет →</span>
+      </span>
     </a>
 
-    <a class="card" href="03-nordic/">
-      <div class="num">ВАРИАНТ 03</div>
-      <h2>Северный минимализм</h2>
-      <div class="sw"><i style="background:#14181A"></i><i style="background:#1B4D3E"></i><i style="background:#F6F5F1"></i><i style="background:#D9D6CC"></i></div>
-      <p>Лента списком с описаниями, много воздуха, тонкие линейки вместо карточек. Ощущение серьёзной площадки уровня finn.no, но объявлений на экране меньше.</p>
-      <div class="meta">Commissioner + Lora</div>
-      <span class="open">Открыть макет →</span>
-    </a>
-
-    <a class="card" href="04-dark/">
-      <div class="num">ВАРИАНТ 04</div>
-      <h2>Тёмный бенто</h2>
-      <div class="sw"><i style="background:#0B0F14"></i><i style="background:#C6F24E"></i><i style="background:#4CC9F0"></i><i style="background:#151C24"></i></div>
-      <p>Бенто-сетка в первом экране, разделы чипами, тёмная тема. Бьёт в раздел цифровых товаров и молодую аудиторию; самый рискованный для возрастной части посетителей.</p>
-      <div class="meta">Unbounded + Golos Text</div>
-      <span class="open">Открыть макет →</span>
-    </a>
-
-    <a class="card" href="05-eesti/">
-      <div class="num">ВАРИАНТ 05</div>
-      <h2>Эстонский швейцарский</h2>
-      <div class="sw"><i style="background:#0072CE"></i><i style="background:#0B0B0B"></i><i style="background:#FFFFFF"></i><i style="background:#D5D9DD"></i></div>
-      <p>Жёсткая сетка без скруглений, двуязычные подписи RU/EST, статус продавца и маркировка рекламы прямо в интерфейсе. Самый «соответствующий правилам ЕС» вариант.</p>
-      <div class="meta">Rubik + IBM Plex Sans / Mono</div>
-      <span class="open">Открыть макет →</span>
+    <a class="card" href="c-lenta/">
+      <span class="shot"><i style="background:#f7f6f3"></i><i style="background:#15603f"></i><i style="background:#16181a"></i><i style="background:#e8f1ec"></i></span>
+      <span class="body">
+        <span class="num">ВАРИАНТ В</span>
+        <h2>Лента</h2>
+        <p>Слева вертикальная панель разделов, по центру лента широкими записями с описанием, справа модули, которые уже есть на сайте: популярные, статьи, опрос, теги.</p>
+        <span class="meta">Golos Text · зелёный #15603f</span>
+        <span class="open">Открыть макет →</span>
+      </span>
     </a>
   </div>
 
+  <div class="note">
+    <h3>О содержимом макетов</h3>
+    Объявления, цены, города и даты взяты с работающего bigru.ee. Придуманных счётчиков и статистики нет —
+    где сумма неизвестна, стоит плейсхолдер <code>[ЦЕНА]</code>, реквизиты юрлица тоже помечены как
+    <code>[РЕГ. КОД]</code> и подобные. Часть объявлений намеренно показана в состоянии «без фотографии» —
+    так выглядит живая доска.<br><br>
+    Фотографии взяты с Wikimedia Commons под свободными лицензиями и служат временным наполнением;
+    список источников и авторов — в <a class="plain" href="https://github.com/PrideMan2022/bigru-templates/blob/main/PHOTO-CREDITS.md">PHOTO-CREDITS.md</a>.
+    Перед запуском они заменяются реальными фото объявлений.
+  </div>
+
   <footer>
-    Демонстрационные макеты для bigru.ee. Изображения объявлений заменены плашками, реквизиты юрлица — плейсхолдерами.<br>
-    Страницы закрыты от индексации (<code>noindex</code>). Ничего на боевой сайт не выкладывалось.
+    Демонстрационные макеты для bigru.ee, закрыты от индексации. На работающий сайт ничего не выкладывалось.
   </footer>
 </div>
 </body>
