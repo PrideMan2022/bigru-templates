@@ -257,16 +257,11 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
   .cookie .btn { flex: 1 1 calc(50% - 4px); min-height: 42px; padding: 0 10px; font-size: 14px; }
   .cookie .btn--line { flex-basis: 100%; order: 3; min-height: 26px; border: 0; background: transparent;
     color: var(--muted); text-decoration: underline; font-size: 13px; }
-  .demo-back { bottom: 162px; right: 12px; padding: 8px 12px; font-size: 12px; }
 }
 
 .crumbs { font-size: 14px; color: var(--muted); padding-top: 14px; overflow-wrap: anywhere; }
 .crumbs a { color: var(--muted); }
 
-.demo-back { position: fixed; right: 14px; bottom: 76px; z-index: 50; background: rgba(18,18,18,.88);
-  color: #fff; font: 500 13px/1 system-ui, sans-serif; padding: 11px 15px; border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(0,0,0,.25); }
-.demo-back:hover { color: #fff; }
 
 /* ---------- плотная мобильная раскладка ---------- */
 @media (max-width: 760px) {
