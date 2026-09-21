@@ -228,7 +228,15 @@ textarea.field { padding: 11px 12px; min-height: 120px; resize: vertical; line-h
 .cookie__in { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .cookie p { flex: 1 1 340px; font-size: 14px; line-height: 1.5; color: var(--ink2); }
 .cookie .btn { flex: 0 1 auto; }
-@media (max-width: 560px) { .cookie .btn { flex: 1 1 100%; } }
+@media (max-width: 700px) {
+  .cookie { padding-bottom: 62px; }
+  .cookie__in { gap: 9px; }
+  .cookie p { flex-basis: 100%; font-size: 13px; }
+  .cookie .btn { flex: 1 1 calc(50% - 5px); min-height: 44px; padding: 0 10px; font-size: 14px; }
+  .cookie .btn--line { flex-basis: 100%; order: 3; min-height: 38px; border: 0; background: transparent;
+    color: var(--muted); text-decoration: underline; }
+  .demo-back { bottom: 12px; right: 12px; padding: 9px 13px; font-size: 12px; }
+}
 
 .crumbs { font-size: 14px; color: var(--muted); padding-top: 14px; overflow-wrap: anywhere; }
 .crumbs a { color: var(--muted); }
